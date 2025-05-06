@@ -7,5 +7,7 @@ Lorem ipsum
 Run the code:
 
 ```bash
-python Uni.py
+python main.py
 ```
+
+You can choose to run the app either in `cmd` or `GUI`.
