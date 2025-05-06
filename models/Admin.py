@@ -1,4 +1,3 @@
-from collections import defaultdict
 from controllers.AdminController import AdminController
 
 class Admin:
