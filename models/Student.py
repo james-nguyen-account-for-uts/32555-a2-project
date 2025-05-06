@@ -1,7 +1,12 @@
+from controllers.StudentController import StudentController
+
 class Student:
   # System prompt texts
   prompt_session_start = "Student System (l/r/x) : "
   prompt_error_handler = "Available options (l/r/x)."
+
+  def __init__(self):
+    self.controller = StudentController()
 
   def main(self):
     # Choose options within the Student System
@@ -9,8 +14,15 @@ class Student:
     
     while (prompt_input != "x"):
       match prompt_input:
+        case "l":
+          # (L)ogin
+          self.controller.login()
+        case "r":
+          # (R)egister
+          self.controller.register()
         case _:
-          print(self.prompt_error_handler)      
+          print(self.prompt_error_handler)
+      print("")   # New line    
       prompt_input = input(self.prompt_session_start).strip().lower()
 
 # Run Student System as a login session
