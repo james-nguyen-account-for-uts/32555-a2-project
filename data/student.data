@@ -1,0 +1,48 @@
+[
+    {
+        "id": "042378",
+        "email": "alice@example.com",
+        "password": "alice123",
+        "name": "Alice Johnson",
+        "subjects": [
+            {
+                "id": "MATH101",
+                "grade": "A",
+                "mark": 93.5
+            },
+            {
+                "id": "PHY102",
+                "grade": "B+",
+                "mark": 85.0
+            }
+        ]
+    },
+    {
+        "id": "903221",
+        "email": "bob@example.com",
+        "password": "bobsecure",
+        "name": "Bob Smith",
+        "subjects": [
+            {
+                "id": "ENG201",
+                "grade": "C",
+                "mark": 62.0
+            },
+            {
+                "id": "CHEM202",
+                "grade": "F",
+                "mark": 48.5
+            },
+            {
+                "id": "BIO203",
+                "grade": "B",
+                "mark": 76.5
+            },
+            {
+                "id": "HIST204",
+                "grade": "A-",
+                "mark": 89.0
+            }
+        ]
+    }
+]
