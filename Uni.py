@@ -1,6 +1,6 @@
 # Import libraries & classes
-import Admin
-import Student
+from Admin import Admin
+from Student import Student
 
 # Class: University System
 class Uni:
@@ -17,11 +17,11 @@ class Uni:
       match prompt_input:
         case "a":
           # Create admin session to start Admin System
-          admin_session = Admin.Admin()
+          admin_session = Admin()
           admin_session.main()
         case "s":
           # Create student session to start Student System
-          student_session = Student.Student()
+          student_session = Student()
           student_session.main()
         case _:
           print(self.prompt_error_handler)      
